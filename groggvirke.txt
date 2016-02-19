@@ -1,0 +1,24 @@
+Sprite
+Coca-cola
+Coca-cola Zero
+Pepsi Max
+Fanta
+Franks
+Franks Blåbär
+Franks Kiwi
+Ramlösa Citrus
+Ramlösa
+Hallonsoda
+Passionsoda
+Mtn Dew
+Trocadero
+Apelsin Juice
+Anannas Juice
+Äppel Juice
+Tranbär Juice
+Mjölk
+Passion Juice
+Mjölk
+Tonic Water
+Ginger Ale
+Russian Water
