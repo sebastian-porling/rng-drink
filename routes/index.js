@@ -14,4 +14,12 @@ router.get('/toString', function(req, res, next){
   res.send(randomizer.toString());
 });
 
+router.get('/drink/:cl', function(req, res, next){
+
+});
+
+router.get('/cocktail/:cl', function(req, res, next){
+
+});
+
 module.exports = router;

@@ -2,6 +2,7 @@
  * Created by steve_000 on 2016-02-23.
  */
 
+//Init
 var mixer,
     illegal = {},
     spirits,
@@ -52,14 +53,12 @@ fs.readFile(filePath2, {encoding: 'utf-8'}, function(err,data){
     }
 });
 
+//Main functions
 
-var Init = function(){
-    // Read in all mixers and all spirits
-    fs.open('./resources/groggvirke', 'r',function(err, fileToRead){
 
-    });
-};
 
+
+// Test functions
 var test = function(res){
     var str = randomMixer() + " with " + randomSpirit();
 
@@ -75,6 +74,8 @@ var toString = function(){
     return keyvalues;
 }
 
+
+// Help functions
 function randomSpirit(){
     var i = getRandomInt(0, spirits.length);
 
