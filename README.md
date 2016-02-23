@@ -3,5 +3,6 @@ This is an application for making a random drink that is allowed to make in Kist
 
 # Features 
 Java-script application.
-Randoming three different kinds of liquor, and one random soda or juice or milk.
-This application will not have any restrictions, any combination of liqour can be with just anything.
+Randoming different kinds of liquor depending on the size of the drink, and random sodas, juices or milks.
+This application have almost no restrictions, any combination of liqour can be with just anything.
+The only restriction is not to mix lemon or limes with milk, because that's disgusting.
