@@ -23,14 +23,15 @@ fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
                 var tmp = mixer[i].split("#");
 
                 illegal[tmp[0]] = tmp[1].split(" ");
-                mixer[0] = tmp[0];
+                mixer[i] = tmp[0];
             }
         }
 
         mixer.forEach(function(str){
 
         });
-        console.log(illegal);
+
+        //console.log(illegal);
     }else{
         console.log(err);
     }
@@ -45,7 +46,7 @@ fs.readFile(filePath2, {encoding: 'utf-8'}, function(err,data){
                 var tmp = spirits[i].split("#");
 
                 illegal[tmp[0]] = tmp[1].split(" ");
-                spirits[0] = tmp[0];
+                spirits[i] = tmp[0];
             }
         }
     }else{
@@ -54,8 +55,58 @@ fs.readFile(filePath2, {encoding: 'utf-8'}, function(err,data){
 });
 
 //Main functions
+var drink = function(size, res){
+    var drink = {};
+
+    drink["spirits"] = getSpirits(size);
+    drink["mixers"] = getMixers(size);
+    drink["extra"] = getExtra();
+
+    res.send(drink);
+};
+
+var cocktail = function(size, res){
+    var cocktail = {};
+    cocktail["spirits"] = getSpirits(size);
+    cocktail["extra"] = getExtra();
+    res.send(drink);
+};
 
 
+function getSpirits(size){
+    var spirits = [];
+    console.log(size + "cl");
+    while(size > 0){
+        var spirit = {};
+        spirit["name"] = randomSpirit();
+        var amount = getRandomInt(1, parseInt(size)+1);
+        spirit["amount"] = amount;
+        spirits = spirits.concat([spirit]);
+        size = size - amount;
+    }
+    return spirits;
+};
+
+function getMixers(size){
+    var mixers = [];
+    size =  Math.round(parseInt(size)/2);
+    console.log(size + " mixers");
+    var i = 0;
+    while(getRandomInt(10-size, 30+i) < 20 || i == 0){
+        mixers = mixers.concat([randomMixer()]);
+        i += 5;
+    }
+
+    return mixers;
+};
+
+function getExtra(){
+    var extra = [];
+    if(getRandomInt(0,100)%5 == 0){
+        extra = randomExtra();
+    }
+    return extra;
+};
 
 
 // Test functions
@@ -63,7 +114,7 @@ var test = function(res){
     var str = randomMixer() + " with " + randomSpirit();
 
     res.send(str);
-}
+};
 
 var toString = function(){
     var keyvalues = {};
@@ -72,7 +123,7 @@ var toString = function(){
     keyvalues["Illegal"] = illegal;
 
     return keyvalues;
-}
+};
 
 
 // Help functions
@@ -80,17 +131,26 @@ function randomSpirit(){
     var i = getRandomInt(0, spirits.length);
 
     return spirits[i];
-}
+};
 
 function randomMixer(){
     var i = getRandomInt(0, mixer.length);
 
     return mixer[i];
-}
+};
+
+function randomExtra(){
+    var i = getRandomInt(0, extra.length);
+
+    return extra[i];
+};
+
 
 function getRandomInt(min, max) {
     return Math.floor(Math.random() * (max - min)) + min;
-}
+};
 
 exports.toString = toString;
 exports.test = test;
+exports.drink = drink;
+exports.cocktail = cocktail;

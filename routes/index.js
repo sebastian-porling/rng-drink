@@ -14,12 +14,12 @@ router.get('/toString', function(req, res, next){
   res.send(randomizer.toString());
 });
 
-router.get('/drink/:cl', function(req, res, next){
-
+router.get('/drink/:amount', function(req, res, next){
+  randomizer.drink(req.params.amount, res);
 });
 
-router.get('/cocktail/:cl', function(req, res, next){
-
+router.get('/cocktail/:amount', function(req, res, next){
+  randomizer.cocktail(req.params.amount, res);
 });
 
 module.exports = router;
