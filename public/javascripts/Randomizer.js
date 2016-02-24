@@ -16,7 +16,7 @@ var mixer,
 fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
     if (!err){
         //console.log('received data: ' + data);
-        mixer = data.split('\r\n');
+        mixer = data.split(/\r\n|\n/);
 
         for(var i = 0; i < mixer.length; i++){
             if(mixer[i].indexOf("#") != -1){
@@ -40,7 +40,7 @@ fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
 fs.readFile(filePath2, {encoding: 'utf-8'}, function(err,data){
     if (!err){
         //console.log('received data: ' + data);
-        spirits = data.split('\r\n');
+        spirits = data.split(/\r\n|\n/);
         for(var i = 0; i < spirits.length; i++){
             if(spirits[i].indexOf("#") != -1){
                 var tmp = spirits[i].split("#");
