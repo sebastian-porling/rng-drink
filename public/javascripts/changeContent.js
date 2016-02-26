@@ -20,7 +20,6 @@ function NewContent(drink){
 			success     :
 				function(response) {
 					console.log(document.getElementById("Drink"));
-					console.log(response);
 					var b = document.getElementById("Drink");
 
 					if(b.firstElementChild != null)
@@ -28,8 +27,13 @@ function NewContent(drink){
 
 					var div = document.createElement("div");
 					div.setAttribute("class", "drink")
-					div.innerHTML = response;
 
+					console.log(response);
+
+					var body = createBody(response);
+
+					console.log(body);
+					div.innerHTML = body;
 
 					b.appendChild(div);
 				}
@@ -63,13 +67,47 @@ function NewContent(drink){
 
 					var div = document.createElement("div");
 					div.setAttribute("class", "drink")
-					div.innerHTML = response;
 
+					console.log(response);
+
+					var body = createBody(response);
+					div.innerHTML = body;
 
 					b.appendChild(div);
 				}
 		});
 	}
+}
+
+function createBody(drink){
+	drink = JSON.parse(drink);
+	var str = "\<div\>" +  "Liquor: " + drink.alcohol + " cl" + "\</div\>";
+
+	if(drink.spirits) {
+		drink.spirits.forEach(function (spirit) {
+			str += "\<div\>" + spirit.amount + "cl" + " " + spirit.name + "\</div\>";
+		});
+	}
+
+	if(drink.mixers) {
+		str += "\<div\>" + "_" + "\</div\>";
+		str += "\<div\>" + "Mixers:" + "\</div\>";
+
+		drink.mixers.forEach(function (mixer) {
+			str += "\<div\>" + mixer + "\</div\>";
+		});
+	}
+
+	if(drink.extra && drink.extra.length > 0) {
+		str +=  "\<div\>" + "_" + "\</div\>";
+		str += "\<div\>" + "Extra:" + "\</div\>";
+
+		drink.extra.forEach(function(extra){
+			str += "\<div\>" + extra + "\</div\>";
+		});
+
+	}
+	return str;
 }
 
 function CheckKey(e, drink) //receives event object as parameter

@@ -6,7 +6,7 @@
 var mixer,
     illegal = {},
     spirits,
-    extra = [ 'Lime', 'Citron' ],
+    extra = [ 'Lime', 'Citron', 'Sockerlag', 'Grenadine' ],
     fs = require('fs'),
     path = require('path'),
     filePath = path.join(__dirname, '../resources/groggvirke.txt'),
@@ -152,22 +152,21 @@ function getMixers(size, spirit){
 
 function getExtra(liquor, mixers){
 
-    if(checkListIllegal(liquor, "Citron", 1))
-        return undefined;
+    var ext = [];
+    var rand;
+    // 1 of 2 chances to add lime or lemon, lowered for each extra
+    while((getRandomInt(0, 1000)%(2 + (ext.length)) == 0 )&& ext.length < extra.length) {
+        rand = false;
+        while(!rand){
+            rand = randomExtra();
 
+            if(checkListIllegal(liquor, rand, 1) && checkListIllegal(mixers, rand))
+               rand = false;
+        }
 
-    if(mixers) {
-        if(checkListIllegal(mixers, "Citron"))
-            return undefined;
+        ext = addExtra(ext, rand);
     }
-
-
-    var extra = [];
-    // 1 of 3 chances to add lime or lemon
-    if(getRandomInt(0,1000)%3 == 0){
-        extra = randomExtra();
-    }
-    return extra;
+    return ext;
 }
 
 // Test functions
@@ -212,38 +211,44 @@ function getRandomInt(min, max) {
 
 function checkIfExist(list, check){
     if(list.length > 0) {
-        list.forEach(function (mixer) {
-            if (mixer === check) {
+        for(var i = 0; i < list.length; i++)
+            if(list[i] == check)
                 return true;
-            }
-        });
     }
     return false;
 }
 
-function addToList(list, check, amount){
+function addToList(list, add, amount){
     for(var i = 0; i < list.length; i++){
-        if(list[i].name === check) {
+        if(list[i].name === add) {
             console.log("Found match");
             list[i].amount += amount;
             return list;
         }
     }
 
-    return list.concat([{name:check, amount:amount}]);
+    return list.concat([{name:add, amount:amount}]);
+}
+
+function addExtra(list, add){
+    for(var i = 0; i < list.length; i++){
+        if(list[i] === add) {
+
+            return list;
+        }
+    }
+    return list.concat([add]);
 }
 
 function checkListIllegal(list, check, spirit){
     if(spirit) {
-        list.forEach(function (s) {
-            if(checkIllegal(s.name,check))
+        for(var i = 0; i < list.length; i++)
+            if(checkIllegal(list[i].name,check))
                 return true;
-        });
     }else {
-        list.forEach(function (m) {
-            if(checkIllegal(m,check))
+        for(var i = 0; i < list.length; i++)
+            if(checkIllegal(list[i],check))
                 return true;
-        });
     }
 
     return false;
@@ -251,6 +256,7 @@ function checkListIllegal(list, check, spirit){
 
 function checkIllegal(first, check){
     if(illegal[first] != undefined && illegal[first].indexOf(check) != -1){
+        console.log(first + " is not allowed to be mixed with " + check);
         return true;
     }
 
