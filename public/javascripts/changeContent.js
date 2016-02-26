@@ -11,10 +11,12 @@ function NewContent(drink){
 			url         :   "/drink/" + size,
 			dataType    :   "html",/* JSON, HTML, SJONP... */
 			type        :   "GET", /* POST or GET; Default = GET */
+			cache		: 	false,
 			async		: 	false,
 			success     :
 				function(response) {
 					console.log(document.getElementById("Drink"));
+					console.log(response);
 					var b = document.getElementById("Drink");
 
 					if(b.firstElementChild != null)
@@ -41,6 +43,7 @@ function NewContent(drink){
 			url         :   "/cocktail/" + size,
 			dataType    :   "html",/* JSON, HTML, SJONP... */
 			type        :   "GET", /* POST or GET; Default = GET */
+			cache		: 	false,
 			async		: 	false,
 			success     :
 				function(response) {
