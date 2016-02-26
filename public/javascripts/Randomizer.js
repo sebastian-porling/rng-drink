@@ -163,8 +163,8 @@ function getExtra(liquor, mixers){
 
 
     var extra = [];
-    // 1 of 5 chances to add lime or lemon
-    if(getRandomInt(0,1000)%5 == 0){
+    // 1 of 3 chances to add lime or lemon
+    if(getRandomInt(0,1000)%3 == 0){
         extra = randomExtra();
     }
     return extra;

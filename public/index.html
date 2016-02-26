@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>RNG</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+	<script src="/javascripts/changeContent.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div class="blackLineHorizontal"> </div>
+<div class="header">
+	<div class="title"><h1>RNG-Drink</h1><h2 id="subtitle">TMEIT</h2></div>
+</div>
+
+<div id="drinks" class="sectionsplit">
+	<h1 type="Section" class="section-title">Drinks
+		<button type="submit" onclick="NewContent(true)">New Drink</button>
+		<input type="text" id="drinkSize" size="5"/>
+	</h1>
+	<div class="innerblock" id="Drink">
+
+	</div>
+</div>
+
+<div id="cocktails" class="sectionsplit">
+
+	<h1 type="Section" class="section-title">Cocktails
+		<button type="submit" onclick="NewContent(false)">New Cocktail</button>
+		<input type="text" id="cocktailSize" size="5"/>
+	</h1>
+
+	<div class="innerblock" id="Cocktail">
+
+	</div>
+</div>
+
+</section>
+
+</body>
+</html>
