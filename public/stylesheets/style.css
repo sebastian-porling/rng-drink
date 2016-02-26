@@ -21,12 +21,12 @@
 		background: rgba(173, 173, 173, 1);
 		padding: 0.1% 0.5% 1%;
 		width: 48.5%;
-		height: 90%;
+		height: intrinsic;
+		height: -moz-fit-content;
 		box-shadow: 5px 5px 5px #888888;
 		margin: 0px 0px 5px;
 		font-family: Georgia, serif;
 		font-size: 1.2em;
-		overflow: auto;
 	}
 	.innerblock
 	{
@@ -34,10 +34,11 @@
 		border-radius: 5px;
 		background: #dddddd url("../images/small_waves.png") repeat left top;
 		padding: 0.5%;
-		height: 95%;
+		height: fit-content;
+		min-height: 780px;
 		box-shadow: 5px 5px 5px #888888;
 		margin: 0px 0px 1%;
-		overflow-x: auto;
+
 	}
 	body
 	{
@@ -52,9 +53,7 @@
 		left:0;
 
 		width: 100%;
-		height: 100%;
-
-		overflow-y:auto;
+		height: 100%
 	}
 	.blackLineHorizontal
 	{
@@ -71,8 +70,7 @@
 		border-radius: 0px 0px 5px 5px;
 		background: #7b7b7b;
 		padding: 1px 5px 1px;
-		width: fill;
-		height: wrap;
+		height: fit-content;
 		box-shadow: 5px 5px 5px #888888;
 		margin: 0px 0px 5px;
 		top: 0px;
@@ -95,7 +93,6 @@
 		width: 100%;
 		height: 100%;
 
-		overflow-y:auto;
 	}
 	.blackLineHorizontal
 	{
@@ -112,8 +109,7 @@
 		border-radius: 0px 0px 5px 5px;
 		background: #7b7b7b;
 		padding: 1px 5px 1px;
-		width: fill;
-		height: wrap;
+		height: fit-content;
 		box-shadow: 5px 5px 5px #888888;
 		margin: 0px 0px 5px;
 		top: 0px;
@@ -122,13 +118,13 @@
 		border-radius: 5px;
 		background: #adadad;
 		padding: 0.1% 0.5% 1%;
-		width: 99%;
-		height: 90%;
+		height: intrinsic;
+		height: -moz-fit-content;
 		box-shadow: 5px 5px 5px #888888;
 		margin: 0px 0px 5px;
 		font-family: Georgia, serif;
 		font-size:1.2em;
-		overflow:auto;
+		overflow: hidden;
 	}
 	.innerblock
 	{
@@ -136,10 +132,10 @@
 		border-radius: 5px;
 		background: #dddddd url("../images/small_waves.png") repeat left top;
 		padding: 0.5%;
-		height: 92%;
+		height: fit-content;
+		min-height: 780px;
 		box-shadow: 5px 5px 5px #888888;
 		margin: 0px 0px 1%;
-		overflow-x: auto;
 	}
 	.section-title
 	{
