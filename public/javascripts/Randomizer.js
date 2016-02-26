@@ -133,7 +133,7 @@ function getMixers(size, spirit){
     var i = 0;
     // The higher amount of spirits increases chances for mixers
     // The more mixers it already contains, the less chance will it be for a new one
-    while((getRandomInt(0, 1000)%(5-size + i) == 0|| i == 0) && i < size){
+    while((getRandomInt(0, 1000)%(6-size + i) == 0|| i == 0) && i < size){
         var m;
 
         while(true) {
