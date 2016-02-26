@@ -1,4 +1,31 @@
+function AlcoholFree() {
+	$.ajax({
+		url: "/alcoholfree",
+		dataType: "html", /* JSON, HTML, SJONP... */
+		type: "GET", /* POST or GET; Default = GET */
+		cache: false,
+		async: false,
+		success: function (response) {
+			console.log(document.getElementById("alcfree"));
+			var b = document.getElementById("alcfree");
 
+			if (b.firstElementChild != null)
+				b.removeChild(b.firstElementChild);
+
+			var div = document.createElement("div");
+			div.setAttribute("class", "drink")
+
+			console.log(response);
+
+			var body = createBody(response);
+
+			console.log(body);
+			div.innerHTML = body;
+
+			b.appendChild(div);
+		}
+	});
+}
 function NewContent(drink){
 	if(drink){
 		var size = document.getElementById("drinkSize").value;
@@ -81,7 +108,11 @@ function NewContent(drink){
 
 function createBody(drink){
 	drink = JSON.parse(drink);
-	var str = "\<div\>" +  "Liquor: " + drink.alcohol + " cl" + "\</div\>";
+	var str = "";
+	if(drink.alcohol)
+		str += "\<div\>" +  "Liquor: " + drink.alcohol + " cl" + "\</div\>";
+	else
+		str += "\<div\>" +  "Alcohol Free" + "\</div\>";
 
 	if(drink.spirits) {
 		drink.spirits.forEach(function (spirit) {

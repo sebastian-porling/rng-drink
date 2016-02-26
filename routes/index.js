@@ -35,6 +35,14 @@ router.get('/cocktail/:amount', function(req, res, next){
   history = history.concat([drink]);
 });
 
+router.get('/alcoholfree', function(req, res, next){
+  var drink = randomizer.alcoholFree(res);
+
+  res.send(drink);
+
+  history = history.concat([drink]);
+});
+
 router.get('/history', function(req, res, next){
 
   res.send(history);

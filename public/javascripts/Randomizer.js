@@ -94,12 +94,24 @@ var cocktail = function(size, res){
 
     cocktail["alcohol"] = size;
     cocktail["spirits"] = getSpirits(size);
-    cocktail["extra"] = getExtra(cocktail["spirits"]);
+    cocktail["extra"] = getExtra(cocktail["spirits"], []);
 
     if(res)
         res.send(cocktail);
     else
         return cocktail;
+}
+
+var alcoholFree = function(res){
+    var drink = {};
+
+    drink["mixers"] = getMixers(10, []);
+    drink["extra"] = getExtra([], drink["mixers"]);
+
+    if(res)
+        res.send(drink);
+    else
+        return drink;
 }
 
 // Main help functions
@@ -277,3 +289,4 @@ exports.toString = toString;
 exports.test = test;
 exports.drink = drink;
 exports.cocktail = cocktail;
+exports.alcoholFree = alcoholFree;
