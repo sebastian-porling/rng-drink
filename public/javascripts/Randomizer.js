@@ -6,12 +6,12 @@
 var mixer,
     illegal = {},
     spirits,
-    extra = [ 'Lime', 'Citron', 'Sockerlag', 'Grenadine' ],
+    extra = [],
     fs = require('fs'),
     path = require('path'),
     filePath = path.join(__dirname, '../resources/groggvirke.txt'),
-    filePath2 = path.join(__dirname, '../resources/sprit.txt');
-
+    filePath2 = path.join(__dirname, '../resources/sprit.txt'),
+    filePath3 = path.join(__dirname, '../resources/extra.txt');
 
 fs.readFile(filePath, {encoding: 'utf-8'}, function(err,data){
     if (!err){
@@ -49,6 +49,15 @@ fs.readFile(filePath2, {encoding: 'utf-8'}, function(err,data){
                 spirits[i] = tmp[0];
             }
         }
+    }else{
+        console.log(err);
+    }
+});
+
+fs.readFile(filePath3, {encoding: 'utf-8'}, function(err,data){
+    if (!err){
+        //console.log('received data: ' + data);
+        extra = data.split(/\r\n|\n/);
     }else{
         console.log(err);
     }
