@@ -178,11 +178,11 @@ function getExtra(liquor, mixers){
     // 1 of 2 chances to add lime or lemon, lowered for each extra
     while((getRandomInt(0, 1000)%(2 + (ext.length)) == 0 )&& ext.length < extra.length) {
         rand = false;
-        while(!rand){
+        while(true){
             rand = randomExtra();
 
-            if(checkListIllegal(liquor, rand, 1) && checkListIllegal(mixers, rand))
-               rand = false;
+            if(!checkListIllegal(liquor, rand, 1) && !checkListIllegal(mixers, rand))
+               break;
         }
 
         ext = addExtra(ext, rand);
