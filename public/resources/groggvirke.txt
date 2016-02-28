@@ -14,11 +14,12 @@ Mtn Dew#Mjölk Grädde
 Trocadero#Mjölk Grädde
 Mjölk#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water
 Grädde#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water
-Apelsin Juice
-Ananas Juice
-Äppel Juice
-Tranbär Juice
-Passion Juice
+Apelsin Juice#Mjölk Grädde
+Ananas Juice#Mjölk Grädde
+Äppel Juice#Mjölk Grädde
+Tranbär Juice#Mjölk Grädde
+Passion Juice#Mjölk Grädde
 Ginger Ale#Mjölk Grädde
 Tonic Water#Mjölk Grädde
 Russian Water#Mjölk Grädde
+Isglass#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water
