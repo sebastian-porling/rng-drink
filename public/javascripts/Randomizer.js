@@ -114,6 +114,28 @@ var alcoholFree = function(res){
         return drink;
 }
 
+var food = function(seed, res){
+
+    if(seed == 0) seed = 1;
+
+    //Random float
+    var x = Math.sin(seed++) * 10000;
+    x = x - Math.floor(x);
+
+    // Random between 0-10000000
+    x = x*10000000;
+    x = Math.floor(x);
+
+    // Modulus for a number between 0 and 1
+    x = x%2;
+    x = "Your number: " + x;
+
+    if(res)
+        res.send(x);
+    else
+        return x;
+}
+
 // Main help functions
 function getSpirits(size){
     var liquor = [];
@@ -293,3 +315,4 @@ exports.test = test;
 exports.drink = drink;
 exports.cocktail = cocktail;
 exports.alcoholFree = alcoholFree;
+exports.food = food;

@@ -21,7 +21,7 @@ Sourz Rainbow Ice
 Sourz Red Berry
 Sourz Raspberry
 Sourz Apple
-Limoncello#Mjölk Grädde Baileys Prinz
+Limoncello#Mjölk Grädde Glass Baileys Prinz
 Bols Raspberry
 Bols Blå
 Bols Bannan
@@ -46,11 +46,11 @@ Xanté
 Anancello
 Mozart
 De Kuyper Créme de Cacao
-Amarula#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water
+Amarula#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water Passion Juice Tranbär Juice Äppel Juice Ananas Juice Apelsin Juice
 Araku
 Kahlúa
 Campari
 Arouz
 Mintuu
-Baileys#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water
-Prinz#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water
+Baileys#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water Passion Juice Tranbär Juice Äppel Juice Ananas Juice Apelsin Juice
+Prinz#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water Passion Juice Tranbär Juice Äppel Juice Ananas Juice Apelsin Juice

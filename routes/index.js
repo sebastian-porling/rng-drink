@@ -48,4 +48,9 @@ router.get('/history', function(req, res, next){
   res.send(history);
 });
 
+router.get('/seed/:seed', function(req, res, next){
+
+  res.send(randomizer.food(req.params.seed));
+});
+
 module.exports = router;
