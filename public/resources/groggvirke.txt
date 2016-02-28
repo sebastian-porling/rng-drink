@@ -1,25 +1,26 @@
-Sprite#Mjölk Grädde
+Sprite#Mjölk Grädde Glass
 Coca-cola#Mjölk Grädde
-Coca-cola Zero#Mjölk Grädde
-Pepsi Max#Mjölk Grädde
-Fanta#Mjölk Grädde
-Franks#Mjölk Grädde
-Franks Blåbär#Mjölk Grädde
-Franks Kiwi#Mjölk Grädde
-Ramlösa Citrus#Mjölk Grädde
-Ramlösa#Mjölk Grädde
-Hallonsoda#Mjölk Grädde
-Passionsoda#Mjölk Grädde
-Mtn Dew#Mjölk Grädde
-Trocadero#Mjölk Grädde
-Mjölk#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water
-Grädde#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water
-Apelsin Juice#Mjölk Grädde
-Ananas Juice#Mjölk Grädde
-Äppel Juice#Mjölk Grädde
-Tranbär Juice#Mjölk Grädde
-Passion Juice#Mjölk Grädde
-Ginger Ale#Mjölk Grädde
-Tonic Water#Mjölk Grädde
-Russian Water#Mjölk Grädde
-Isglass#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water
+Coca-cola Zero#Mjölk Grädde Glass
+Pepsi Max#Mjölk Grädde Glass
+Fanta#Mjölk Grädde Glass
+Franks#Mjölk Grädde Glass
+Franks Blåbär#Mjölk Grädde Glass
+Franks Kiwi#Mjölk Grädde Glass
+Ramlösa Citrus#Mjölk Grädde Glass
+Ramlösa#Mjölk Grädde Glass
+Hallonsoda#Mjölk Grädde Glass
+Passionsoda#Mjölk Grädde Glass
+Mtn Dew#Mjölk Grädde Glass
+Trocadero#Mjölk Grädde Glass
+Mjölk#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water Passion Juice Tranbär Juice Äppel Juice Ananas Juice Apelsin Juice
+Grädde#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water Passion Juice Tranbär Juice Äppel Juice Ananas Juice Apelsin Juice
+Apelsin Juice#Mjölk Grädde Glass
+Ananas Juice#Mjölk Grädde Glass
+Äppel Juice#Mjölk Grädde Glass
+Tranbär Juice#Mjölk Grädde Glass
+Passion Juice#Mjölk Grädde Glass
+Ginger Ale#Mjölk Grädde Glass
+Tonic Water#Mjölk Grädde Glass
+Russian Water#Mjölk Grädde Glass
+Kaffe
+Glass#Citron Lime Sprite Coca-cola Zero Pepsi Max Fanta Franks Franks Blåbär Franks Kiwi Ramlösa Citrus Ramlösa Hallonsoda Passionsoda Mtn Dew Trocadero Ginger Ale Tonic Water Russian Water Passion Juice Tranbär Juice Äppel Juice Ananas Juice Apelsin Juice

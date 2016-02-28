@@ -18,7 +18,7 @@
 <div id="drinks" class="sectionsplit">
 	<h1 type="Section" class="section-title">Drinks
 		<button type="submit" onclick="NewContent(true)">New Drink</button>
-		<input type="number" id="drinkSize" size="5" onkeyup="CheckKey(event, true)"/>
+		<input type="number" id="drinkSize" size="5" onkeyup="CheckKey(event, true)" value="4" min="4" max="12"/>
 	</h1>
 	<div class="innerblock" id="Drink">
 
@@ -29,7 +29,7 @@
 
 	<h1 type="Section" class="section-title">Cocktails
 		<button type="submit" onclick="NewContent()">New Cocktail</button>
-		<input type="number" id="cocktailSize" size="5" onkeyup="CheckKey(event)"/>
+		<input type="number" id="cocktailSize" size="5" onkeyup="CheckKey(event)" value="4" min="4" max="12"/>
 	</h1>
 
 	<div class="innerblock" id="Cocktail">

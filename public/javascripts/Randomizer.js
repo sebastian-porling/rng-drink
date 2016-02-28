@@ -162,6 +162,9 @@ function getMixers(size, spirit){
             if(!checkListIllegal(spirit, m, 1) && !checkListIllegal(mix, m) && !checkIfExist(mix,m)){
                 break;
             }
+
+            if(checkIfExist(mix, "Grädde") && checkIfExist(mix, "Mjölk") && checkIfExist(mix, "Glass"))
+                return mix;
         }
 
         mix = mix.concat([m]);
