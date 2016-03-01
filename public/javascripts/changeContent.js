@@ -121,9 +121,10 @@ function createBody(drink){
 	}
 
 	if(drink.mixers) {
-		if(drink.alcohol)
+		if(drink.alcohol) {
 			str += "\<div\>" + "_" + "\</div\>";
-		str += "\<div\>" + "Mixers:" + "\</div\>";
+			str += "\<div\>" + "Mixers:" + "\</div\>";
+		}
 
 		drink.mixers.forEach(function (mixer) {
 			str += "\<div\>" + mixer + "\</div\>";
