@@ -146,7 +146,19 @@
 	}
 	button
 	{
+		background: #3498db;
+		background-image: -webkit-linear-gradient(top, #44687D, #233540);
+		background-image: -moz-linear-gradient(top, #44687D, #233540);
+		background-image: -ms-linear-gradient(top, #44687D, #233540);
+		background-image: -o-linear-gradient(top, #44687D, #233540);
+		background-image: linear-gradient(to bottom, #44687D, #233540);
+		-webkit-border-radius: 28;
+		-moz-border-radius: 28;
+		border-radius: 28px;
+		font-family: Arial;
+		color: #ffffff;
 		font-size: 1em;
+		padding: 2px 4px 2px 4px;
 	}
 	input
 	{
